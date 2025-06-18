@@ -7,7 +7,7 @@ Autocut AI is a tool that automatically creates viral video cuts for Instagram a
 To install this project, follow these steps:
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/lucasribeiro-dev/autocut-ai.git
    ```
 2. Navigate to the project directory:
    ```bash
