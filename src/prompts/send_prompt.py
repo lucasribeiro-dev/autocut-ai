@@ -2,9 +2,9 @@ import os
 from string import Template
 from typing import Dict
 from .prompt_interface import IPrompt
-from managers.ai_manager import ai_manager
+from src.managers.ai_manager import ai_manager
 
-class BasePrompt(IPrompt):
+class SendPrompt(IPrompt):
     def __init__(self, prompt_path):
         self.prompt_path = prompt_path
         self.ai_manager = ai_manager
@@ -15,7 +15,7 @@ class BasePrompt(IPrompt):
             template = Template(f.read())
         return template.safe_substitute(variables)
 
-    def send_prompt(self, text: str) -> str:
+    def build(self, text: str) -> str:
         prompt_variables = {
             "srt_content": text
         }

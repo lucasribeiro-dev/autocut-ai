@@ -16,17 +16,19 @@ class IPrompt(ABC):
             str: The processed prompt with all variables substituted
         """
         pass 
-    
+
     @abstractmethod
-    def send_prompt(self, text: str, model='gpt-4.1-mini') -> str:
+    def build(self, text: str) -> str:
         """
-        Send a prompt to the OpenAI API and return the response.
+        Build and process a prompt with the given text content.
         
         Args:
-            text (str): The text to send to the OpenAI API
-            model (str): The model to use for the API call
+            text (str): The text content to be processed by the prompt
             
         Returns:
-            str: The response from the OpenAI API
+            str: The processed result from the AI model
         """
-        pass 
+        pass
+
+
+    

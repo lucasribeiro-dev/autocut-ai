@@ -3,3 +3,7 @@ moviepy
 openai
 ffmpeg-python
 dotenv
+selenium
+webdriver-manager
+pytube>=15.0.0
+yt-dlp

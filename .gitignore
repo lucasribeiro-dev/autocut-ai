@@ -2,3 +2,6 @@
 venv
 __videos__
 __pycache__
+__perfil__
+logs
+downloads/
